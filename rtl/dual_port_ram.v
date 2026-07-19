@@ -4,6 +4,8 @@ module dual_port_ram #(
     parameter ADDR_WIDTH = 8,
     parameter DEPTH      = (1 << ADDR_WIDTH)
 )(
+    input clk,
+    input rst_n,
     // Port A
     input                       en_a;
     input                       we_a;
