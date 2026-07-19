@@ -6,19 +6,20 @@ module dual_port_ram #(
 )(
     input clk,
     input rst_n,
+    
     // Port A
-    input                       en_a;
-    input                       we_a;
-    input  [ADDR_WIDTH-1:0]     addr_a;
-    input  [DATA_WIDTH-1:0]     din_a;
-    output reg [DATA_WIDTH-1:0] dout_a;
+    input                       en_a,
+    input                       we_a,
+    input  [ADDR_WIDTH-1:0]     addr_a,
+    input  [DATA_WIDTH-1:0]     din_a,
+    output reg [DATA_WIDTH-1:0] dout_a,
 
     // Port B
-    input                       en_b;
-    input                       we_b;
-    input  [ADDR_WIDTH-1:0]     addr_b;
-    input  [DATA_WIDTH-1:0]     din_b;
-    output reg [DATA_WIDTH-1:0] dout_b;
+    input                       en_b,
+    input                       we_b,
+    input  [ADDR_WIDTH-1:0]     addr_b,
+    input  [DATA_WIDTH-1:0]     din_b,
+    output reg [DATA_WIDTH-1:0] dout_b
 );
 
     //Internal Signals
