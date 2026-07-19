@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module test_bench;
+module dual_port_ram_tb;
 
 parameter DATA_WIDTH = 32;
 parameter ADDR_WIDTH = 8;

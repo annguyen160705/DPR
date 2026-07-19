@@ -1,0 +1,15 @@
+obj_dir/
+wave/*.vcd
+*.log
+work/
+db/
+incremental_db/
+simulation/
+*.qdb
+*.qpg
+*.qtl
+*.bak
+*.log
+transcript
+*.wlf
+
